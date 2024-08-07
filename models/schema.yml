@@ -40,16 +40,41 @@ sources:
 
       - name: raw_adwords
         identifier: raw_gz_adwords
+        description: greenweez adwords ads data source
+        columns:
+          - name: campaign_key
+            tests:
+              - unique
+              - not_null
 
       - name: raw_bing
         identifier: raw_gz_bing
+        description: greenweez bing ads data source
+        columns:
+          - name: campaign_key
+            tests:
+              - unique
+              - not_null
 
       - name: raw_criteo
         identifier: raw_gz_criteo
+        description: greenweez criteo ads data source
+        columns:
+          - name: campaign_key
+            tests:
+              - unique
+              - not_null
+
 
       - name: raw_facebook
         identifier: raw_gz_facebook
-        
+        description: greenweez facebook ads data source
+        columns:
+          - name: campaign_key
+            tests:
+              - unique
+              - not_null
+
 
               
 ##########
