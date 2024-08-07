@@ -5,3 +5,4 @@ SELECT
     SUM (click) AS ads_click
 FROM {{ ref('int_campaigns') }}
 GROUP BY date_date
+ORDER BY date_date DESC
